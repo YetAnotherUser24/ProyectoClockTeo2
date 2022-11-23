@@ -42,7 +42,6 @@ public:
     // DESTRUCTOR
     ~Tiempo() {}
 
-    
     // FUNCION QUE DA LA HORA ACTUAL
     void actualidad()
     {
@@ -55,8 +54,6 @@ public:
         mes = meses[tiempo->tm_mon];
         dia_semana = semana[tiempo->tm_wday];
     }
-
-    
 
     // SUMAR DIAS A LA FECHA ACTUAL
     Tiempo operator+(int i)
@@ -96,6 +93,7 @@ public:
                 aux.mes = aux.meses[(tiempo->tm_mon + 1 + i / 31) % 12];
             }
         }
+        return aux;
     }
 };
 #endif // __TIEMPO_H__

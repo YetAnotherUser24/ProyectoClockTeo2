@@ -54,11 +54,15 @@ public:
 
     void mostrar_alarma()
     {
+        cout.clear();
         cout << "\nALARMA PROGRAMADA PARA LAS:";
         cout << "\n--------------------------\n";
-        cout << this->hora << " Horas\n";
-        cout << this->minuto << " Minutos\n";
-        cout << this->segundo << " Segundos\n";
+        cout << hora;
+        cout << "Horas\n";
+        cout << minuto;
+        cout << "Minutos\n";
+        cout << segundo;
+        cout << "Segundos\n";
         cout << "El dia: " << (*RealTime + 1).dia_semana << (*RealTime + 1).dia << " de " << (*RealTime + 1).mes;
     }
 

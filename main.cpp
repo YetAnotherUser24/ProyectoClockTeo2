@@ -12,6 +12,6 @@ int main()
         RelojBv->activar_alarma();
     }
     RelojBv->apagar_alarma();
-    //RelojBv->mostrar_alarma();
+    RelojBv->mostrar_alarma();
     return 0;
 }
